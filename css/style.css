@@ -1,0 +1,81 @@
+body{
+    background-color: #121212;
+}
+.nav-bar .navbar-nav .nav-item a:hover{
+    opacity: 1;
+}
+
+
+.root{
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "navbar main-view main-view"
+    "player player player";
+}
+
+.nav-bar {
+    grid-area: navbar;
+    background: rgba(0, 0, 0, .8);
+    width: 230px;
+    min-height: 0;
+    float: 1;
+}
+.top-bar {
+    grid-area: main-view;
+    height: 60px;
+    z-index: 2;
+}
+
+.main{
+    grid-area: main-view;
+    flex: 1;
+    height: 100%;
+    min-height: 0;
+    overflow-y: scroll;
+}
+.player{
+    grid-area: player;
+    background-color: #181818;
+    height: 90px;
+}
+.nav-bar-header .logo{
+    width: 131px;
+    max-height: 40px;
+}
+.navbar .navbar-nav {
+    padding: 0 8px;
+}
+.nav-bar .navbar-nav .nav-item a{
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    color: #FFF;
+    opacity: .6;
+    font-weight: 500;
+}
+.nav-bar .navbar-nav .nav-item.active a{
+    background-color: #282828;
+    opacity: 1;
+} 
+
+.nav-bar .navbar-nav .nav-item i{
+    margin-right: 16px;
+    font-size: 16px;
+
+}
+
+.root-list {
+    flex: 1;
+    min-height: 0;
+}
+.root-list .root-list-header h2{
+    font-size: 11px;
+    letter-spacing: .016em;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
