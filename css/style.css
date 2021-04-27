@@ -151,3 +151,13 @@ a{
     color: #fff;
     background-color:rgba(0, 0, 0, .7);
 }
+
+.btn-upgrade{
+  background-color: rgba(0, 0, 0, .7);
+  border: 1px solid #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.76px;
+  color: #fff;
+  text-transform: uppercase;
+}
